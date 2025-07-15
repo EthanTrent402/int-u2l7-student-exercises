@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <title>Ethan Trent about me</title>
+</head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ethan Trent Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Ethan Trent</div>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="Ethan T Port.html">Home</a></li>
+      <li><a href="About me.html">About</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact Info.html">Contact</a></li>
+      <li><a href="future asperations.html">Future Aspirations</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #89CFF0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Animation for transforming hamburger to 'X' */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #004080;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+</style>
+<script>
+  // Function to toggle the menu visibility
+  function toggleMenu(icon) {
+    icon.classList.toggle("active");
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
+
+<h1>  About me</h1>
+<p style="font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;"></p>
+<p> I am a student at Anderson High school and a next tech catapul, I am very new to web devlopment but im very intrested in technology and prepared to learn more.</p>
+<p> I am learning html and css at the moment and plan to learn more languages.</p>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #89CFF0, #ffffff);
+  font-family: Arial, sans-serif;
+}
+</style>
+    <h2>My hobbies</h2>
+    <ul>
+        <li>Playing video games</li>
+        <li>Watching movies</li>
+        <li>Reading books</li>
+    </ul>
+    <h2>  My goals</h2>
+    <p> I want to become a software engineer and work on exciting projects that make a difference in people's lives.</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image in Middle Right</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translateY(-50%);
+      width: 100px; /* Optional: adjust size */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+ <img src=unnamed.jpg width="800" height="200">
+</body>
+</html>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ethan Trent Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Small Clock</title>
+  <style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #89CFF0, #ffffff);
+  font-family: Arial, sans-serif;
+}
+
+    #clock {
+      font-size: 15px; /* Smaller font size */
+      color: #004080;
+      background: white;
+      padding: 8px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 20px;
+      left: 40%;
+      transform: translateX(-50%);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById("clock").textContent = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call
+  </script>
+</body>
+</html>

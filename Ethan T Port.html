@@ -1,0 +1,475 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Ethan Trent Portfolio</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ethan Trent Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Small Clock</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #89CFF0, #ffffff);
+      font-family: 'Arial', sans-serif;
+    }
+
+    #clock {
+      font-size: 15px; /* Smaller font size */
+      color: #004080;
+      background: white;
+      padding: 8px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 20px;
+      left: 40%;
+      transform: translateX(-50%);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <div id="clock"></div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById("clock").textContent = time;
+    }
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call
+  </script>
+</body>
+</html>
+
+  <nav class="navbar">
+    <div class="logo">Ethan Trent</div>
+
+    <!-- Hamburger icon -->
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="Ethan T Port.html">Home</a></li>
+      <li><a href="About me.html">About</a></li>
+      <li><a href="Projects.html">Projects</a></li>
+      <li><a href="Contact Info.html">Contact</a></li>
+      <li><a href="future asperations.html">Future Aspirations</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #89CFF0, #ffffff);
+  font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004080;
+  padding: 10px 20px;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+/* Animation for transforming hamburger to 'X' */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #004080;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+</style>
+<script>
+  // Function to toggle the menu visibility
+  function toggleMenu(icon) {
+    icon.classList.toggle("active");
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+  const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+</script>
+
+
+
+
+   
+
+
+    <h1>Welcome to My Portfolio</h1>
+    <p>Ethan Trents Portofolio</p>
+
+    
+    <a href="http://127.0.0.1:3000/int-u2l7-student-exercises/Contact Info.html">
+  <img src="data:image/png;base64,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" width="200" height="200" alt="Contact Page">
+  <p>Contact Me</p>
+</a>        
+<a href="http://127.0.0.1:3000/int-u2l7-student-exercises/About me.html">
+  <img src="Ethan_Trent (1).jpg" width="200" height="200">
+  <p>About me</p>
+  <a href="http://127.0.0.1:3000/int-u2l7-student-exercises/Projects.html">
+    <img src="download.png" width="200" height="200">
+    <p>My Projects</p>
+  </a>
+  <a href="http://127.0.0.1:3000/int-u2l7-student-exercises/future asperations.html">
+    <img src="download (1).png" width="200" height="200">
+    <p>Future Aspirations</p>
+</a>
+        <body style="background-color: #89CFF0;">
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minesweeper Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .game-container {
+      max-width: 320px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .counter {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    #board {
+      display: grid;
+      grid-template-columns: repeat(8, 30px);
+      grid-template-rows: repeat(8, 30px);
+      gap: 2px;
+      justify-content: center;
+      margin: 15px auto;
+    }
+
+    .cell {
+      width: 30px;
+      height: 30px;
+      background-color: #ccc;
+      border: 1px solid #999;
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.2s ease;
+    }
+
+    .revealed {
+      background-color: #e6e6e6;
+      cursor: default;
+    }
+
+    .bomb {
+      background-color: #ff4d4d;
+      color: white;
+      animation: explode 0.4s ease;
+    }
+
+    .flag {
+      background-color: #ffeb3b;
+      color: #d32f2f;
+    }
+
+    .number-1 { color: blue; }
+    .number-2 { color: green; }
+    .number-3 { color: red; }
+    .number-4 { color: purple; }
+
+    @keyframes explode {
+      0%   { transform: scale(1); background-color: #ff4d4d; }
+      50%  { transform: scale(1.3); background-color: #ff0000; }
+      100% { transform: scale(1); background-color: #ff4d4d; }
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>💣 Minesweeper</h1>
+    <div class="counter">Mines left: <span id="mineCount">10</span></div>
+    <p>Left-click to reveal. Right-click to flag.</p>
+    <div id="board"></div>
+    <button onclick="generateBoard()">Restart</button>
+  </div>
+
+  <script>
+    const boardSize = 8;
+    const mineCount = 10;
+    const board = document.getElementById('board');
+    let cells = [];
+    let minePositions = [];
+    let gameOver = false;
+    let remainingMines = mineCount;
+
+    function updateMineCounter() {
+      document.getElementById('mineCount').textContent = remainingMines;
+    }
+
+    function generateBoard() {
+      board.innerHTML = '';
+      cells = [];
+      minePositions = [];
+      gameOver = false;
+      remainingMines = mineCount;
+      updateMineCounter();
+
+      for (let i = 0; i < boardSize * boardSize; i++) {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        cell.dataset.index = i;
+        cell.addEventListener('click', handleClick);
+        cell.addEventListener('contextmenu', handleRightClick);
+        cells.push(cell);
+        board.appendChild(cell);
+      }
+
+      while (minePositions.length < mineCount) {
+        let random = Math.floor(Math.random() * cells.length);
+        if (!minePositions.includes(random)) {
+          minePositions.push(random);
+        }
+      }
+
+      cells.forEach((cell, index) => {
+        if (minePositions.includes(index)) {
+          cell.dataset.bomb = 'true';
+        } else {
+          const adjacent = getAdjacentCells(index);
+          let bombCount = adjacent.filter(i => minePositions.includes(i)).length;
+          if (bombCount > 0) {
+            cell.dataset.number = bombCount;
+          }
+        }
+      });
+    }
+
+    function handleClick(e) {
+      if (gameOver) return;
+      const cell = e.target;
+      if (cell.classList.contains('flag')) return;
+
+      const index = parseInt(cell.dataset.index);
+      if (cell.dataset.bomb === 'true') {
+        revealAllMines();
+        cell.classList.add('bomb');
+        cell.textContent = '💥';
+        gameOver = true;
+        alert("💣 Game Over!");
+        return;
+      }
+
+      revealCell(index);
+    }
+
+    function handleRightClick(e) {
+      e.preventDefault();
+      if (gameOver) return;
+      const cell = e.target;
+      if (cell.classList.contains('revealed')) return;
+
+      const index = parseInt(cell.dataset.index);
+
+      if (cell.classList.contains('flag')) {
+        cell.classList.remove('flag');
+        cell.textContent = '';
+        remainingMines++;
+      } else {
+        if (remainingMines > 0) {
+          cell.classList.add('flag');
+          cell.textContent = '🚩';
+          remainingMines--;
+        }
+      }
+
+      updateMineCounter();
+      checkWinCondition();
+    }
+
+    function revealCell(index) {
+      const cell = cells[index];
+      if (cell.classList.contains('revealed') || cell.classList.contains('flag')) return;
+
+      cell.classList.add('revealed');
+      const number = cell.dataset.number;
+      if (number) {
+        cell.textContent = number;
+        cell.classList.add(`number-${number}`);
+      } else {
+        const adjacent = getAdjacentCells(index);
+        adjacent.forEach(i => revealCell(i));
+      }
+    }
+
+    function revealAllMines() {
+      minePositions.forEach(index => {
+        const cell = cells[index];
+        cell.classList.add('bomb');
+        cell.textContent = '💣';
+      });
+    }
+
+    function checkWinCondition() {
+      if (remainingMines !== 0) return;
+
+      const flaggedCorrectly = minePositions.every(index =>
+        cells[index].classList.contains('flag')
+      );
+
+      const noExtraFlags = cells.every((cell, idx) => {
+        if (cell.classList.contains('flag')) {
+          return minePositions.includes(idx);
+        }
+        return true;
+      });
+
+      if (flaggedCorrectly && noExtraFlags) {
+        gameOver = true;
+        alert("🎉 You Win! All mines flagged correctly!");
+      }
+    }
+
+    function getAdjacentCells(index) {
+      const x = index % boardSize;
+      const y = Math.floor(index / boardSize);
+      const positions = [];
+
+      for (let dx = -1; dx <= 1; dx++) {
+        for (let dy = -1; dy <= 1; dy++) {
+          if (dx === 0 && dy === 0) continue;
+          const nx = x + dx;
+          const ny = y + dy;
+          if (nx >= 0 && nx < boardSize && ny >= 0 && ny < boardSize) {
+            positions.push(ny * boardSize + nx);
+          }
+        }
+      }
+
+      return positions;
+    }
+
+    generateBoard();
+  </script>
+</body>
+</html>
+
+  ...
+</body>
